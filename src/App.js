@@ -27,7 +27,11 @@ function App() {
         </div>
       </div>
       <small>
-        <a href="#" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/LeelooDawn/weather-react-app"
+          target="_blank"
+          rel="noreferrer"
+        >
           Open-Sourced Code
         </a>{" "}
         by Leslie Nesbit
