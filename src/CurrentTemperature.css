@@ -1,0 +1,21 @@
+.descriptors {
+  line-height: 18px;
+}
+.current-temp strong {
+  color: #ff3266;
+  font-size: 50px;
+  font-weight: 400;
+}
+.current-temp .units {
+  position: relative;
+  font-size: 22px;
+  top: -22px;
+}
+.emojiIcon {
+  font-size: 45px;
+}
+
+.weather-icon {
+  height: 100px;
+  width: 100px;
+}

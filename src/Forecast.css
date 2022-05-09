@@ -1,0 +1,11 @@
+.forecast {
+  margin-top: 16px;
+  color: #1ab2a8;
+  font-size: 20px;
+}
+.forecast-temp {
+  font-size: 35px;
+}
+.weather-forecast {
+  padding-left: 10px;
+}
