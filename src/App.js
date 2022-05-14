@@ -20,7 +20,6 @@ function App() {
                 </div>
               </div>
               <Forecast />
-
               <Search />
             </div>
           </div>

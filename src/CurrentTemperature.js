@@ -10,7 +10,7 @@ export default function CurrentTemperature() {
   };
 
   return (
-    <div className="CurrentTemperature">
+    <div className="Current">
       <ul>
         <li className="current-temp text-center">
           <span className="emojiIcon" role="img" aria-label="sunemoji">
