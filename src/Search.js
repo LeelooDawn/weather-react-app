@@ -3,7 +3,7 @@ import "./Search.css";
 
 export default function Search() {
   return (
-    <div className="container-fluid">
+    <div className="Search container-fluid">
       <form className="d-flex" id="weather-search">
         <input
           className="form-control me-2"
