@@ -35,24 +35,23 @@ export default function Search(props) {
 
   if (weatherData.ready) {
     return (
-      <div>
+      <div className="Search">
         <CurrentTemperature data={weatherData} />
-        <div className="Search container-fluid">
-          <form className="d-flex" onSubmit={handleSubmit}>
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Enter Your City Here or-"
-              aria-label="Search"
-              autoFocus="on"
-              onChange={handleCityChange}
-            />
-            <input className="btn" value="Search" type="submit" />
-          </form>
-          <button className="currentButton">Use My Current Location</button>
-          <div className="date-time">
-            <p>This is the current time</p>
-          </div>
+
+        <form className="d-flex" onSubmit={handleSubmit}>
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="Enter Your City Here or-"
+            aria-label="Search"
+            autoFocus="on"
+            onChange={handleCityChange}
+          />
+          <input className="btn" value="Search" type="submit" />
+        </form>
+        <button className="currentButton">Use My Current Location</button>
+        <div className="date-time">
+          <p>This is the current time</p>
         </div>
       </div>
     );
