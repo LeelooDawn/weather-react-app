@@ -1,38 +1,38 @@
 import React from "react";
 import "./CurrentTemperature.css";
 
-export default function CurrentTemperature() {
-  let weatherData = {
-    humidity: 20,
-    wind: 4,
-    description: "clear",
-    currentWeather: 75,
-  };
-
+export default function CurrentTemperature(props) {
   return (
     <div className="Current">
-      <ul>
-        <li className="current-temp text-center">
-          <span className="emojiIcon" role="img" aria-label="sunemoji">
-            ☀️
-          </span>
-          <strong>{weatherData.currentWeather}</strong>
-          <span className="units">°F</span>
-        </li>
-        <li className="text-center descriptors">
-          <small>
-            Humidity: <span id="humidity">{weatherData.humidity}</span>%
-          </small>
-        </li>
-        <li className="text-center descriptors">
-          <small>
-            Wind: <span id="windSpeed">{weatherData.wind}</span> mph
-          </small>
-        </li>
-        <li className="text-center descriptors" id="description">
-          <small>{weatherData.description}</small>
-        </li>
-      </ul>
+      <div className="row">
+        <div className="col-6 city-center">
+          <h1 className="your-city">{props.data.city}</h1>
+        </div>
+        <div className="col-6">
+          <ul>
+            <li className="current-temp text-center">
+              <span className="emojiIcon" role="img" aria-label="sunemoji">
+                ☀️
+              </span>
+              <strong>{Math.round(props.data.temperature)}</strong>
+              <span className="units">°F</span>
+            </li>
+            <li className="text-center descriptors">
+              <small>
+                Humidity: <span>{props.data.humidity}</span>%
+              </small>
+            </li>
+            <li className="text-center descriptors">
+              <small>
+                Wind: <span>{Math.round(props.data.wind)}</span> mph
+              </small>
+            </li>
+            <li className="text-center descriptors">
+              <small>{props.data.description}</small>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

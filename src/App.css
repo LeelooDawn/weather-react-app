@@ -39,10 +39,7 @@ li:first-letter {
   background-color: white;
   border-radius: 20px;
 }
-.city-center {
-  position: relative;
-  top: 30px;
-}
+
 .row {
   color: #1ab2a8;
   text-align: center;

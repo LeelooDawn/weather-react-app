@@ -1,7 +1,5 @@
 import "./App.css";
-import CurrentCity from "./CurrentCity";
-import CurrentTemperature from "./CurrentTemperature";
-import Forecast from "./Forecast";
+
 import Search from "./Search";
 
 function App() {
@@ -11,16 +9,7 @@ function App() {
         <div className="middle-box">
           <div className="inner-box">
             <div className="container">
-              <div className="row">
-                <div className="col-6 city-center">
-                  <CurrentCity />
-                </div>
-                <div className="col-6">
-                  <CurrentTemperature />
-                </div>
-              </div>
-              <Forecast />
-              <Search />
+              <Search defaultCity="Bernalillo" />
             </div>
           </div>
         </div>

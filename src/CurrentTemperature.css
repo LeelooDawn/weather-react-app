@@ -22,3 +22,13 @@
   height: 100px;
   width: 100px;
 }
+.your-city {
+  text-align: center;
+  font-size: 50px;
+  color: #ff3266;
+}
+
+.city-center {
+  position: relative;
+  top: 30px;
+}
