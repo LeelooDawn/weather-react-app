@@ -38,22 +38,19 @@ export default function Search(props) {
       <div>
         <CurrentTemperature data={weatherData} />
         <div className="Search container-fluid">
-          <form className="d-flex" id="weather-search" onSubmit={handleSubmit}>
+          <form className="d-flex" onSubmit={handleSubmit}>
             <input
               className="form-control me-2"
               type="search"
               placeholder="Enter Your City Here or-"
               aria-label="Search"
+              autoFocus="on"
               onChange={handleCityChange}
             />
-            <button className="btn btn-outline-*" type="submit">
-              Search
-            </button>
+            <input className="btn" value="Search" type="submit" />
           </form>
-          <button className="currentButton" id="currentLocation">
-            Use My Current Location
-          </button>
-          <div className="date-time" id="date-time">
+          <button className="currentButton">Use My Current Location</button>
+          <div className="date-time">
             <p>This is the current time</p>
           </div>
         </div>
