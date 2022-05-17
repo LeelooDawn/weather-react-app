@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CurrentTemperature from "./CurrentTemperature";
+import FormattedDate from "./FormattedDate";
 import "./Search.css";
 
 export default function Search(props) {
@@ -15,6 +16,7 @@ export default function Search(props) {
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -49,8 +51,8 @@ export default function Search(props) {
           <input className="btn" value="Search" type="submit" />
         </form>
         <button className="currentButton">Use My Current Location</button>
-        <div className="date-time">
-          <p>This is the current time</p>
+        <div>
+          <FormattedDate date={weatherData.date} />
         </div>
       </div>
     );
