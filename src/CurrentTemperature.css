@@ -4,7 +4,7 @@
 .descriptors {
   line-height: 18px;
 }
-.Current strong {
+.Current .temperature {
   color: #ff3266;
   font-size: 50px;
   font-weight: 400;
@@ -13,8 +13,9 @@
 }
 .Current .units {
   position: relative;
-  font-size: 22px;
+  font-size: 18px;
   top: -30px;
+  text-decoration: none;
 }
 .Current canvas {
   margin: 5px 10px 0 0;

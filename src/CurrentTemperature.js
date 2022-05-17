@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import UnitConversion from "./UnitConversion";
 import "./CurrentTemperature.css";
 
 export default function CurrentTemperature(props) {
@@ -13,9 +14,9 @@ export default function CurrentTemperature(props) {
           <ul>
             <li className="text-center">
               <WeatherIcon code={props.data.icon} />
-
-              <strong>{Math.round(props.data.temperature)}</strong>
-              <span className="units">°F</span>
+              <span>
+                <UnitConversion imperial={props.data.temperature} />
+              </span>
             </li>
             <li className="text-center descriptors">
               <small>
