@@ -1,27 +1,25 @@
 .Current {
-  margin-top: 10px;
+  margin: 5px 0 5 5px;
 }
 .descriptors {
   line-height: 18px;
 }
-.current-temp strong {
+.Current strong {
   color: #ff3266;
   font-size: 50px;
   font-weight: 400;
+  position: relative;
+  top: -10px;
 }
-.current-temp .units {
+.Current .units {
   position: relative;
   font-size: 22px;
-  top: -22px;
+  top: -30px;
 }
-.emojiIcon {
-  font-size: 45px;
+.Current canvas {
+  margin: 5px 10px 0 0;
 }
 
-.weather-icon {
-  height: 100px;
-  width: 100px;
-}
 .your-city {
   text-align: center;
   font-size: 50px;

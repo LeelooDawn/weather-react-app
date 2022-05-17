@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 import "./CurrentTemperature.css";
 
 export default function CurrentTemperature(props) {
@@ -10,10 +11,9 @@ export default function CurrentTemperature(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li className="current-temp text-center">
-              <span className="emojiIcon" role="img" aria-label="sunemoji">
-                ☀️
-              </span>
+            <li className="text-center">
+              <WeatherIcon code={props.data.icon} />
+
               <strong>{Math.round(props.data.temperature)}</strong>
               <span className="units">°F</span>
             </li>
