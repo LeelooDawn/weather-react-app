@@ -1,18 +1,18 @@
 .Search {
   margin-top: 20px;
 }
-.btn {
+.Search .btn {
   background-color: #d487e2;
   color: #570964;
   border-radius: 22px;
   transition: all 200ms ease-in-out;
   border: 1.5px solid #ab47bd;
 }
-.btn:hover {
+.Search .btn:hover {
   color: white;
   background-color: #ab47bd;
 }
-.currentButton {
+.Search .currentButton {
   background-color: #5a6aca;
   color: white;
   border-radius: 22px;
@@ -22,11 +22,11 @@
   margin: 0 auto;
   margin-top: 4px;
 }
-.currentButton:hover {
+.Search .currentButton:hover {
   color: #223185;
   background-color: white;
 }
-.date-time {
+.Search .date-time {
   text-align: center;
   color: #1ab2a8;
 }

@@ -37,12 +37,11 @@ export default function Search(props) {
     return (
       <div className="Search">
         <CurrentTemperature data={weatherData} />
-
         <form className="d-flex" onSubmit={handleSubmit}>
           <input
             className="form-control me-2"
             type="search"
-            placeholder="Enter Your City Here or-"
+            placeholder="Enter Your City Here"
             aria-label="Search"
             autoFocus="on"
             onChange={handleCityChange}
