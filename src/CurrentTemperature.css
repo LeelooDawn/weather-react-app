@@ -3,6 +3,9 @@
 }
 .descriptors {
   line-height: 18px;
+  position: relative;
+  top: -15px;
+  float: left;
 }
 .Current .temperature {
   color: #ff3266;
@@ -10,24 +13,23 @@
   font-weight: 400;
   position: relative;
   top: -10px;
+  float: left;
 }
 .Current .units {
   position: relative;
   font-size: 18px;
-  top: -30px;
+  float: left;
+}
+.Current a {
   text-decoration: none;
+  color: orange;
 }
 .Current canvas {
-  margin: 5px 10px 0 0;
+  float: right;
 }
 
 .your-city {
   text-align: center;
   font-size: 50px;
   color: #ff3266;
-}
-
-.city-center {
-  position: relative;
-  top: 30px;
 }

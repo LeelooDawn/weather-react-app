@@ -7,31 +7,38 @@ export default function CurrentTemperature(props) {
   return (
     <div className="Current">
       <div className="row">
-        <div className="col-6 city-center">
+        <div className="col-md-5">
           <h1 className="your-city">{props.data.city}</h1>
         </div>
-        <div className="col-6">
-          <ul>
-            <li className="text-center">
-              <WeatherIcon code={props.data.icon} />
-              <span>
-                <UnitConversion imperial={props.data.temperature} />
-              </span>
-            </li>
-            <li className="text-center descriptors">
-              <small>
-                Humidity: <span>{props.data.humidity}</span>%
-              </small>
-            </li>
-            <li className="text-center descriptors">
-              <small>
-                Wind: <span>{Math.round(props.data.wind)}</span> mph
-              </small>
-            </li>
-            <li className="text-center descriptors">
-              <small>{props.data.description}</small>
-            </li>
-          </ul>
+        <div className="col-md-3">
+          <WeatherIcon code={props.data.icon} />
+        </div>
+
+        <div className="col-md-4">
+          <UnitConversion imperial={props.data.temperature} />
+        </div>
+
+        <div className="row">
+          <div className="col-md-4">
+            <p>Have a Great Day!</p>
+          </div>
+          <div className="col-md-4 offset-md-4">
+            <ul className="descriptors">
+              <li>
+                <small>
+                  Humidity: <span>{props.data.humidity}</span>%
+                </small>
+              </li>
+              <li>
+                <small>
+                  Wind: <span>{Math.round(props.data.wind)}</span> mph
+                </small>
+              </li>
+              <li>
+                <small>{props.data.description}</small>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
