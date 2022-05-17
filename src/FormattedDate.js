@@ -13,17 +13,15 @@ export default function FormattedDate(props) {
   ];
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
   let minutes = props.date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
+  let ampm = hours >= 12 ? `pm` : `am`;
+  hours = hours % 12;
+  hours = hours ? hours : 12;
+  minutes = minutes < 10 ? `0` + minutes : minutes;
   return (
     <div className="date-time">
-      It is currently {hours}:{minutes} on {day}
+      It is currently {hours}:{minutes}
+      {ampm} on {day}
     </div>
   );
 }
