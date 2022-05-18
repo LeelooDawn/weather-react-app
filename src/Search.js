@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CurrentTemperature from "./CurrentTemperature";
-import FormattedDate from "./FormattedDate";
+
 import "./Search.css";
 import DailyForecast from "./DailyForecast";
 

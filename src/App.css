@@ -23,6 +23,7 @@ li:first-letter {
   background-color: #e2cff7;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
+  box-shadow: 8px 8px 4px rgb(89, 63, 117, 0.3);
 }
 .middle-box {
   width: 651px;
