@@ -12,6 +12,7 @@ export default function Search(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -41,7 +42,7 @@ export default function Search(props) {
     return (
       <div className="Search">
         <CurrentTemperature data={weatherData} />
-        <DailyForecast />
+        <DailyForecast coordinates={weatherData.coordinates} />
         <form className="d-flex" onSubmit={handleSubmit}>
           <input
             className="form-control me-2"
