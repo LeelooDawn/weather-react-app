@@ -3,6 +3,7 @@ import axios from "axios";
 import CurrentTemperature from "./CurrentTemperature";
 import FormattedDate from "./FormattedDate";
 import "./Search.css";
+import DailyForecast from "./DailyForecast";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -40,6 +41,7 @@ export default function Search(props) {
     return (
       <div className="Search">
         <CurrentTemperature data={weatherData} />
+        <DailyForecast />
         <form className="d-flex" onSubmit={handleSubmit}>
           <input
             className="form-control me-2"

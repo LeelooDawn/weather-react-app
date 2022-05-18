@@ -1,0 +1,13 @@
+.DailyForecast-day {
+  color: hsl(176, 75%, 40%);
+  font-size: 20px;
+}
+.DailyForecast-temp {
+  font-size: 18px;
+  color: palevioletred;
+}
+
+.DailyForecast-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}
