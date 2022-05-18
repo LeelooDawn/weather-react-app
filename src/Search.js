@@ -42,7 +42,10 @@ export default function Search(props) {
     return (
       <div className="Search">
         <CurrentTemperature data={weatherData} />
+        <br />
         <DailyForecast coordinates={weatherData.coordinates} />
+        <br />
+
         <form className="d-flex" onSubmit={handleSubmit}>
           <input
             className="form-control me-2"
@@ -54,9 +57,8 @@ export default function Search(props) {
           />
           <input className="btn" value="Search" type="submit" />
         </form>
-        <button className="currentButton">Use My Current Location</button>
         <div>
-          <FormattedDate date={weatherData.date} />
+          <p className="text-center"> Have a great day! </p>
         </div>
       </div>
     );

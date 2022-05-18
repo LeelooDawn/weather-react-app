@@ -1,28 +1,17 @@
 .Search {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .Search .btn {
   background-color: #d487e2;
-  color: #570964;
+  color: #3f8154;
   border-radius: 22px;
   transition: all 200ms ease-in-out;
-  border: 1.5px solid #ab47bd;
+  border: 1.5px solid #51a86c;
 }
 .Search .btn:hover {
   color: white;
-  background-color: #ab47bd;
+  background-color: #51a86c;
 }
-.Search .currentButton {
-  background-color: #5a6aca;
-  color: white;
-  border-radius: 22px;
-  transition: all 200ms ease-in-out;
-  border: 1.5px solid #223185;
-  display: block;
-  margin: 0 auto;
-  margin-top: 4px;
-}
-.Search .currentButton:hover {
-  color: #223185;
-  background-color: white;
+.Search form {
+  margin-top: 8px;
 }

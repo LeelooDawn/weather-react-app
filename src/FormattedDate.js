@@ -1,5 +1,4 @@
 import React from "react";
-import "./formattedDate.css";
 
 export default function FormattedDate(props) {
   let days = [
@@ -19,9 +18,9 @@ export default function FormattedDate(props) {
   hours = hours ? hours : 12;
   minutes = minutes < 10 ? `0` + minutes : minutes;
   return (
-    <div className="date-time">
-      It is currently {hours}:{minutes}
-      {ampm} on {day}
+    <div className="text-center">
+      {day} {hours}:{minutes}
+      {ampm}
     </div>
   );
 }

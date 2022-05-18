@@ -13,17 +13,17 @@ function App() {
             </div>
           </div>
         </div>
+        <footer className="text-center">
+          This project was coded by Leslie Nesbit and is {""}
+          <a
+            href="https://github.com/LeelooDawn/weather-react-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced code on Github
+          </a>
+        </footer>
       </div>
-      <footer className="text-center">
-        This project was coded by Leslie Nesbit and is {""}
-        <a
-          href="https://github.com/LeelooDawn/weather-react-app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          open-sourced code on Github
-        </a>
-      </footer>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import UnitConversion from "./UnitConversion";
+import FormattedDate from "./FormattedDate";
 import "./CurrentTemperature.css";
 
 export default function CurrentTemperature(props) {
@@ -20,7 +21,7 @@ export default function CurrentTemperature(props) {
 
         <div className="row">
           <div className="col-md-4">
-            <p>Have a Great Day!</p>
+            <FormattedDate date={props.data.date} />
           </div>
           <div className="col-md-4 offset-md-4">
             <ul className="descriptors">

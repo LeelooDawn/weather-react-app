@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ul {
   margin: 0;
@@ -7,7 +7,7 @@ ul {
 }
 li {
   list-style: none;
-  text-align: right;
+  text-align: left;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -18,29 +18,29 @@ li:first-letter {
   margin: 45px auto;
 }
 .outer-box {
-  height: 528px;
-  border: 3px solid #dbd109;
-  background-color: #f5f1a8;
+  height: 493px;
+  border: 3px solid #593f75;
+  background-color: #e2cff7;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
 }
 .middle-box {
   width: 651px;
-  height: 501px;
-  border: 3px solid #ff3266;
-  background-color: #fd6c90;
+  height: 451px;
+  border: 3px solid #593f75;
+  background-color: #6cf597;
   border-radius: 20px;
 }
 .inner-box {
   margin: 10px;
-  height: 474px;
-  border: 3px solid #5a6aca;
+  height: 420px;
+  border: 3px solid #52a86d;
   padding: 5px;
   background-color: white;
   border-radius: 20px;
 }
 
 .row {
-  color: #1ab2a8;
   text-align: center;
+  color: #752a6e;
 }

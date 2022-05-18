@@ -8,8 +8,9 @@
   float: left;
 }
 .Current .temperature {
-  color: #ff3266;
+  color: #67a84a;
   font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   position: relative;
   top: -10px;
@@ -17,13 +18,10 @@
 }
 .Current .units {
   position: relative;
-  font-size: 18px;
+  font-size: 22px;
   float: left;
 }
-.Current a {
-  text-decoration: none;
-  color: orange;
-}
+
 .Current canvas {
   float: right;
 }
@@ -31,5 +29,5 @@
 .your-city {
   text-align: center;
   font-size: 50px;
-  color: #ff3266;
+  color: #593f75;
 }
